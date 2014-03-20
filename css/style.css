@@ -1,6 +1,6 @@
 *{
-  padding:0;
   margin:0;
+  padding:0;
   color:#666;
   font-size:12px;
 }
@@ -8,8 +8,8 @@ a {
   text-decoration:none;
 }
 a:hover{
-  text-decoration:underline;
   color:#cb0000;
+  text-decoration:underline;
 }
 .pull-left{
   float:left;
@@ -22,21 +22,21 @@ a:hover{
 }
 
 .content{
-  width:1000px;
   margin:0 auto;
+  width:1000px;
 }
 
 #header{
-  background:url(../images/background.gif) repeat-x fixed top;
   width:100%;
   height:100px;
+  background:url(../images/background.gif) repeat-x fixed top;
 }
 
 #logo{
-  padding:19px 0;
-  height:50px;
-  width:500px;
   float:left;
+  padding:19px 0;
+  width:500px;
+  height:50px;
 }
 #logo h1{
   position:absolute;
@@ -47,11 +47,11 @@ a:hover{
 }
 
 #welcome{
-  padding:10px 0;
-  line-height:20px;
   float:right;
+  padding:10px 0;
   width:470px;
   height:70px;
+  line-height:20px;
 }
 #welcome a{
   color:#cb0000;
@@ -68,35 +68,35 @@ a:hover{
 #navbar ul#left-nav{
   display:inline;
   padding:0 10px;
-  list-style:none;
   width:700px;
+  list-style:none;
 }
 #navbar #left-nav li{
+  float:left;
   margin:0;
   width:115px;
   text-align:center;
-  float:left;
 }
 #navbar #left-nav li a {
-  font-size:14px;
-  color:#fff;
   height:35px;
+  color:#fff;
+  font-size:14px;
   line-height:35px;
 }
 #navbar ul#right-nav{
   display:inline;
-  list-style:none;
   width:300px;
+  list-style:none;
 }
 #navbar ul#right-nav li{
-  text-align:center;
-  width:145px;
   float:left;
+  width:145px;
+  text-align:center;
 }
 #navbar ul#right-nav li a{
-  font-size:16px;
-  color:#ccc;
   height:35px;
+  color:#ccc;
+  font-size:16px;
   line-height:35px;
 }
 #wrapper{
@@ -119,11 +119,11 @@ a:hover{
   background:url(../images/category.png) no-repeat;
 }
 #category .title h2{
-  color:#fff;
-  font-size:14px;
-  font-weight:bold;
-  line-height:30px;
   padding:0 20px;
+  color:#fff;
+  font-weight:bold;
+  font-size:14px;
+  line-height:30px;
 }
 
 #category ul{
@@ -132,48 +132,48 @@ a:hover{
 
 #category ul li a{
   display:block;
-  border-bottom:1px dashed #b7b7b7;
-  line-height:28px;
-  font-size:12px;
-  color:#666;
+  padding:3px 10px;
   width:160px;
   height:28px;
-  padding:3px 10px;
+  border-bottom:1px dashed #b7b7b7;
+  color:#666;
   font-weight:bold;
+  font-size:12px;
+  line-height:28px;
 }
 #category ul li a:hover, #category ul li a:hover span{
-  text-decoration:none;
-  color:#cb0000;
   background-color:#e3e3e3;
+  color:#cb0000;
+  text-decoration:none;
 }
 #nav li{
   zoom:1;
 }
 #nav li ul {
- line-height:24px; 
- list-style-type:square;
- text-align:left;
+ position: absolute;
  left:-999px;
+ z-index:999;
+ display:inline;
  margin-top:-40px;
  margin-left:50px;
- height:83px;
  width:150px;
- z-index:999;
- background:url(../images/drop.gif) no-repeat;
- position: absolute;
- display:inline;
+ height:83px;
+ background:url(../images/drop.gif) no-repeat; 
+ list-style-type:square;
+ text-align:left;
+ line-height:24px;
 }
 
 #nav li ul li{
-  float:left;
   display:block;
+  float:left;
   margin-left:30px;
   width:80px; 
 }
 #nav li ul a{
+  padding-left:15px;
   width: 65px;
   text-align:left;
-  padding-left:15px;
 }
 #nav li ul a:link  {
   color:#F1F1F1;
@@ -193,122 +193,122 @@ a:hover{
   left:25%;
 }
 #search{
-  background:url(../images/search.png) no-repeat;
   height:72px;
+  background:url(../images/search.png) no-repeat;
 }
 
 #search .title h2{
-  color:#fff;
-  font-size:14px;
-  font-weight:bold;
-  line-height:36px;
   padding:0 40px;
   height:36px;
+  color:#fff;
+  font-weight:bold;
+  font-size:14px;
+  line-height:36px;
 }
 #search form{
   height:36px;
 }
 #search form input{
+  margin:5px 5px 5px 25px;
   width:130px;
   height:18px;
-  margin:5px 5px 5px 25px;
   border:none;
 }
 #search .go{
+  margin:0 12px 0 0;
+  width:29px;
+  height:28px;
   background:url('..images/go.gif') no-repeat;
   cursor:pointer;
-  margin:0 12px 0 0;
-  height:28px;
-  width:29px;
 }
 #news{
-  background:url(../images/news.png) no-repeat;
   height:158px;
+  background:url(../images/news.png) no-repeat;
 }
 #news .title{
-  line-height:30px;
   padding:0 10px 0 40px;
+  line-height:30px;
 }
 #news .title h2{
   color:#fff;
-  font-size:14px;
   font-weight:bold;
+  font-size:14px;
 }
 #news .title span a{
-  font-size:12px;
-  font-weight:normal;
   color:#ccc;
+  font-weight:normal;
+  font-size:12px;
 }
 #news .newscontent ul{
-  font-size:12px;
-  list-style-type:square;
   margin:10px 30px;
+  list-style-type:square;
+  font-size:12px;
 } 
 #news .newscontent ul li{
-  line-height:25px;
   color:#333;
+  line-height:25px;
 }
 #contact{
-  background:url(../images/contact.png) no-repeat;
   height:85px;
+  background:url(../images/contact.png) no-repeat;
 }
 #main{
   width:780px;
 }
 #carousel{
-  height:346px;
   margin:0 0 20px;
+  height:346px;
 }
 #carousel .viewport {
+  position:relative;
+  float:left;
+  overflow:hidden;
+  margin:0;
   width:780px;
   height:335px;
-  float:left;
-  margin:0;
-  overflow:hidden;
-  position:relative;
 }
 #carousel .bullets {
+  clear:both;
   overflow:hidden;
   list-style:none;
-  clear:both;
 }
 #carousel .bullets li {
   float:left;
 }
 #carousel .bullet {
-  background-color:#efefef;
-  text-decoration:none;
-  text-align:center;
-  height:12px;
+  display:block;
   width:156px;
+  height:12px;
+  background-color:#efefef;
   color:#333;
+  text-align:center;
+  text-decoration:none;
   font-size:10px;
   font-family:sans-serif;
-  display:block;
 }
 #carousel .bullet.active {
-  color:#fff;
   background-color:#333;
+  color:#fff;
 }
 #carousel .disable {
   visibility:hidden;
 }
 #carousel .overview {
-  list-style:none;
   position:absolute;
-  width:780px;
-  left:0;
   top:0;
+  left:0;
+  width:780px;
+  list-style:none;
 }
 #carousel .overview li {
   float:left;
-  border:1px solid #dcdcdc;
   width:778px;
   height:333px;
+  border:1px solid #dcdcdc;
 }
 #product{
-  height:255px;
   width:779px;
+  height:255px;
   background:url(../images/product.png) no-repeat;
 }
 #product .title{
@@ -322,9 +322,9 @@ a:hover{
   display:inline;
 }
 #product .title a{
-  font-size:14px;
-  font-weight:bold;
   padding:0 20px;
+  font-weight:bold;
+  font-size:14px;
 }
 #product .title .black a{
   color:#000;
@@ -333,21 +333,21 @@ a:hover{
   color:#fff;
 }
 #product .title .more a{
-  font-weight:normal;
   color:#ccc;
+  font-weight:normal;
 }
 #product .procontent {
   padding: 0 9px;
 }
 #product .procontent ul li {
-  width:190px;
-  height:225px;
   float: left;
   overflow:hidden;
+  width:190px;
+  height:225px;
 }
 #product .procontent .proimg{
-  margin:0;
   overflow:hidden;
+  margin:0;
   width:190px;
   height:170px;
 }
@@ -362,13 +362,13 @@ a:hover{
   color:#454545;
 }
 #product .procontent p, #product .procontent p a{
+  text-align:center;
   font-size:12px;
   line-height:14px;
-  text-align:center;
 }
 #footer{
-  background:url(../images/bottom.png) repeat-x;
   height:96px;
+  background:url(../images/bottom.png) repeat-x;
   line-height:20px;
 }
 #footer div{
