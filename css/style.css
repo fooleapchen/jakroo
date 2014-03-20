@@ -29,7 +29,7 @@ a:hover{
 #header{
   background:url(../images/background.gif) repeat-x fixed top;
   width:100%;
-  height:50px;
+  height:100px;
 }
 
 #logo{
@@ -50,7 +50,7 @@ a:hover{
   padding:10px 0;
   line-height:20px;
   float:right;
-  width:460px;
+  width:470px;
   height:70px;
 }
 #welcome a{
