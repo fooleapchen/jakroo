@@ -65,7 +65,40 @@ a:hover{
   height:35px;
   background:url(../images/navbar.png) no-repeat;
 }
-
+#navbar ul#left-nav{
+  display:inline;
+  padding:0 10px;
+  list-style:none;
+  width:700px;
+}
+#navbar #left-nav li{
+  margin:0;
+  width:115px;
+  text-align:center;
+  float:left;
+}
+#navbar #left-nav li a {
+  font-size:14px;
+  color:#fff;
+  height:35px;
+  line-height:35px;
+}
+#navbar ul#right-nav{
+  display:inline;
+  list-style:none;
+  width:300px;
+}
+#navbar ul#right-nav li{
+  text-align:center;
+  width:150px;
+  float:left;
+}
+#navbar ul#right-nav li a{
+  font-size:16px;
+  color:#ccc;
+  height:35px;
+  line-height:35px;
+}
 #wrapper{
   margin:10px 0;
 }
