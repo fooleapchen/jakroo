@@ -6,6 +6,28 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="js/jquery.tinycarousel.js"></script>
+  <script type=text/javascript>
+  function menuFix() {
+   var sfEls = document.getElementById("nav").getElementsByTagName("li");
+   for (var i=0; i<sfEls.length; i++) {
+    sfEls[i].onmouseover=function() {
+    this.className+=(this.className.length>0? " ": "") + "sfhover";
+    }
+    sfEls[i].onMouseDown=function() {
+    this.className+=(this.className.length>0? " ": "") + "sfhover";
+    }
+    sfEls[i].onMouseUp=function() {
+    this.className+=(this.className.length>0? " ": "") + "sfhover";
+    }
+    sfEls[i].onmouseout=function() {
+    this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+
+  "");
+    }
+   }
+  }
+  window.onload=menuFix;
+  </script>
 </head>
 
 <body>
@@ -17,7 +39,7 @@
         <img src="images/telephone.gif" width="250" height="50" class="pull-right" />
     </div>
     <div class="pull-left" id="logo">
-      <img src="images/logo.gif" width="210" height="52" />
+      <a href="/" title="捷酷商城"><h1>捷酷商城</h1><img src="images/logo.gif" width="210" height="52" alt="捷酷LOGO" /></a>
     </div>
   </div>
 </div>
@@ -29,32 +51,38 @@
   <div class="content">
     <div class="pull-left" id="sidebar">
       <div id="category">
-        <div class="title">商品分类</div>
-        <ul>
-          <li><a href="#"><span class="pull-right">&#9658;</span>骑行服</a></li>
-          <li><a href="#"><span class="pull-right">&#9658;</span>骑行裤</a></li>
-          <li><a href="#"><span class="pull-right">&#9658;</span>骑行套装</a></li>
-          <li><a href="#"><span class="pull-right">&#9658;</span>骑行配件</a></li>
-          <li><a href="#"><span class="pull-right">&#9658;</span>女士专区</a></li>
-          <li><a href="#"><span class="pull-right">&#9658;</span>儿童专区</a></li>
+        <div class="title"><h2>商品分类</h2></div>
+        <ul id="nav">
+          <li><a href="#" title="骑行服"><span class="pull-right">&#9658;</span>骑行服</a></li>
+          <li><a href="#" title="骑行裤"><span class="pull-right">&#9658;</span>骑行裤</a>
+          <ul>
+            <li>1/2骑行裤</li>
+            <li>3/4骑行裤</li>
+            <li>4/4骑行裤</li>
+          </ul>
+          </li>
+          <li><a href="#" title="骑行套装"><span class="pull-right">&#9658;</span>骑行套装</a></li>
+          <li><a href="#" title="骑行配件"><span class="pull-right">&#9658;</span>骑行配件</a></li>
+          <li><a href="#" title="女士专区"><span class="pull-right">&#9658;</span>女士专区</a></li>
+          <li><a href="#" title="儿童专区"><span class="pull-right">&#9658;</span>儿童专区</a></li>
         </ul>
       </div>
 
       <div id="search">
-        <div class="title">商品搜索</div>
+        <div class="title"><h2>商品搜索</h2></div>
         <form action="/search" method="get">
           <input class="pull-right go" type="submit" value="" />
           <input type="text" name="q" class="search-query" placeholder="" style="border:0" />
         </form>
       </div>
       <div id="news">
-        <div class="title"><span class="pull-right"><a href="#">更多>></a></span>商城快讯</div>
+        <div class="title"><span class="pull-right"><a href="#">更多>></a></span><h2>商城快讯</h2></div>
         <div class="newscontent">
           <ul>
-            <li><a href="#">回馈车友，积分换购好礼！</a></li>
-            <li><a href="#">会员升级，加冕黄色领骑衫</a></li>
-            <li><a href="#">开业酬宾，全场购物免运费</a></li>
-            <li><a href="#">回馈车友，积分换购好礼！</a></li>
+            <li><a href="#" title="回馈车友">回馈车友，积分换购好礼！</a></li>
+            <li><a href="#" title="会员升级，加冕黄色领骑衫">会员升级，加冕黄色领骑衫</a></li>
+            <li><a href="#" title="开业酬宾，全场购物免运费">开业酬宾，全场购物免运费</a></li>
+            <li><a href="#" title="回馈车友，积分换购好礼！">回馈车友，积分换购好礼！</a></li>
           </ul>
         </div>
       </div>
@@ -65,11 +93,11 @@
       <div id="carousel">
         <div class="viewport">
           <ul class="overview">
-            <li><img src="images/picture5.jpg" alt="" /></li>
-            <li><img src="images/picture4.jpg" alt="image 4" /></li>
-            <li><img src="images/picture3.jpg" alt="image 3" /></li>
-            <li><img src="images/picture2.jpg" alt="image 2" /></li>
-            <li><img src="images/picture1.jpg" alt="image 1" /></li>
+            <li><img src="images/picture5.jpg" alt="女士专区" /></li>
+            <li><img src="images/picture4.jpg" alt="阳春三月，尽显骑行“本色”" /></li>
+            <li><img src="images/picture3.jpg" alt="捷酷极速7定制" /></li>
+            <li><img src="images/picture2.jpg" alt="格雷骑行短裤" /></li>
+            <li><img src="images/picture1.jpg" alt="新骑之旅——新车友必备" /></li>
            </ul>
          </div>
          <ul class="bullets">
@@ -93,29 +121,29 @@
       <div class="" id="product">
         <div class="title">
           <span class="more pull-right"><a href="#">更多>></a></span>
-          <span class="black"><a href="#">新款上市</a></span>
-          <span class="white"><a href="#">精品推荐</a></span>
+          <span class="black"><h2><a href="#">新款上市</a></h2></span>
+          <span class="white"><h2><a href="#">精品推荐</a></h2></span>
         </div>
         <div class="procontent">
           <ul>
           <li>
-            <div class="proimg"><a href="#" title=""><img src="images/pro1.jpg" width="190" height="170" alt="" /></a></div>
-            <p><a href="#" title="">捷酷 大地4/4背带长裤</a></p>
+            <div class="proimg"><a href="#" title=""><img src="images/pro1.jpg" width="190" height="170" alt="捷酷 大地4/4背带长裤" /></a></div>
+            <p><a href="#" title="捷酷 大地4/4背带长裤">捷酷 大地4/4背带长裤</a></p>
             <p>会员价:￥399.00</p>
           </li>
           <li>
-            <div class="proimg"><a href="#" title=""><img src="images/pro2.jpg" width="190" height="170" alt="" /></a></div>
-            <p><a href="#" title="">捷酷 原子 4/4无背带骑行…</a></p>
+            <div class="proimg"><a href="#" title=""><img src="images/pro2.jpg" width="190" height="170" alt="捷酷 原子 4/4无背带骑行…" /></a></div>
+            <p><a href="#" title="捷酷 原子 4/4无背带骑行…">捷酷 原子 4/4无背带骑行…</a></p>
             <p>会员价:￥452.00</p>
           </li>
           <li>
-            <div class="proimg"><a href="#" title=""><img src="images/pro3.jpg" width="190" height="170" alt="" /></a></div>
-            <p><a href="#" title="">捷酷 富士爱普骑行夹克…</a></p>
+            <div class="proimg"><a href="#" title=""><img src="images/pro3.jpg" width="190" height="170" alt="捷酷 富士爱普骑行夹克…" /></a></div>
+            <p><a href="#" title="捷酷 富士爱普骑行夹克…">捷酷 富士爱普骑行夹克…</a></p>
             <p>会员价:￥528.00</p>
           </li>
           <li>
-            <div class="proimg"><a href="#" title=""><img src="images/pro4.jpg" width="190" height="170" alt="" /></a></div>
-            <p><a href="#" title="">捷酷 富士骑行夹克（红）</a></p>
+            <div class="proimg"><a href="#" title=""><img src="images/pro4.jpg" width="190" height="170" alt="捷酷 富士骑行夹克（红）" /></a></div>
+            <p><a href="#" title="捷酷 富士骑行夹克（红）">捷酷 富士骑行夹克（红）</a></p>
             <p>会员价:￥498.00</p>
           </li>
           </ul>
@@ -132,6 +160,9 @@
     <a href="#">联系我们</a>|
     <a href="#">友情链接</a>|
     <a href="#">帮助中心</a>
+  </div>
+  <div id="summary">
+    <strong>捷酷</strong>(JAKROO)是国内最早涉足骑行服研发的品牌之一
   </div>
   <div id="copyright">
     Jakrooshop.com&copy; 2009 All rights reserved<br />

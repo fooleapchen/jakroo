@@ -36,6 +36,13 @@ a:hover{
   width:500px;
   float:left;
 }
+#logo h1{
+  position:absolute;
+  left:-999px;
+}
+#logo img{
+  border:0;
+}
 
 #welcome{
   padding:10px 0;
@@ -76,7 +83,7 @@ a:hover{
   height:265px;
   background:url(../images/category.png) no-repeat;
 }
-#category .title{
+#category .title h2{
   color:#fff;
   font-size:14px;
   font-weight:bold;
@@ -104,12 +111,60 @@ a:hover{
   color:#cb0000;
   background-color:#e3e3e3;
 }
+#nav li ul {
+ line-height:24px; 
+ list-style-type:square;
+ text-align:left;
+ left:-999px;
+ margin-top:-40px;
+ margin-left:50px;
+ height:83px;
+ width:150px;
+ z-index:999;
+ position: absolute;
+ background:url(../images/drop.gif) no-repeat;
+}
+
+#nav li ul li{
+  float:left;
+  margin-left:30px;
+  width:80px; 
+}
+
+
+#nav li ul a{
+  display:block;
+  width: 65px;
+  text-align:left;
+  padding-left:15px;
+}
+#nav li ul a:link  {
+  color:#F1F1F1;
+  text-decoration:none;
+}
+#nav li ul a:visited  {
+  color:#F1F1F1;
+  text-decoration:none;
+}
+#nav li ul a:hover  {
+  color:#FFF;
+  text-decoration:none;
+  font-weight:normal;
+}
+
+#nav li:hover ul {
+  left:25%;
+}
+
+#nav li.sfhover ul {
+  left:25%;
+}
 #search{
   background:url(../images/search.png) no-repeat;
   height:72px;
 }
 
-#search .title{
+#search .title h2{
   color:#fff;
   font-size:14px;
   font-weight:bold;
@@ -138,11 +193,13 @@ a:hover{
   height:158px;
 }
 #news .title{
+  line-height:30px;
+  padding:0 10px 0 40px;
+}
+#news .title h2{
   color:#fff;
   font-size:14px;
   font-weight:bold;
-  line-height:30px;
-  padding:0 10px 0 40px;
 }
 #news .title span a{
   font-size:12px;
@@ -167,6 +224,54 @@ a:hover{
 }
 #carousel{
   height:346px;
+  margin:0 0 20px;
+}
+#carousel .viewport {
+  width:780px;
+  height:335px;
+  float:left;
+  margin:0;
+  overflow:hidden;
+  position:relative;
+}
+#carousel .bullets {
+  overflow:hidden;
+  list-style:none;
+  clear:both;
+}
+#carousel .bullets li {
+  float:left;
+}
+#carousel .bullet {
+  background-color:#efefef;
+  text-decoration:none;
+  text-align:center;
+  height:12px;
+  width:156px;
+  color:#333;
+  font-size:10px;
+  font-family:sans-serif;
+  display:block;
+}
+#carousel .bullet.active {
+  color:#fff;
+  background-color:#333;
+}
+#carousel .disable {
+  visibility:hidden;
+}
+#carousel .overview {
+  list-style:none;
+  position:absolute;
+  width:780px;
+  left:0;
+  top:0;
+}
+#carousel .overview li {
+  float:left;
+  border:1px solid #dcdcdc;
+  width:778px;
+  height:333px;
 }
 #product{
   height:255px;
@@ -179,6 +284,9 @@ a:hover{
 #product .title .black{
   display:inline-block;
   width:100px;
+}
+#product .title h2{
+  display:inline;
 }
 #product .title a{
   font-size:14px;
@@ -194,72 +302,6 @@ a:hover{
 #product .title .more a{
   font-weight:normal;
   color:#ccc;
-}
-#footer{
-  background:url(../images/bottom.png) repeat-x;
-  height:96px;
-  line-height:20px;
-}
-#links{
-  padding:10px 0;
-  text-align:center;
-}
-#links a {
-  padding:0 20px;
-}
-#copyright{
-  text-align:center;
-}
-
-#carousel {
-    margin: 0 0 20px;
-}
-#carousel .viewport {
-    width: 780px;
-    height: 335px;
-    float: left;
-    margin:0;
-    overflow: hidden;
-    position: relative;
-}
-#carousel .bullets {
-    overflow:hidden;
-    list-style: none;
-    clear: both;
-}
-#carousel .bullets li {
-    float: left;
-}
-#carousel .bullet {
-    background-color: #efefef;
-    text-decoration: none;
-    text-align: center;
-    height:12px;
-    width:156px;
-    color: #333;
-    font-size: 10px;
-    font-family:sans-serif;
-    display: block;
-}
-#carousel .bullet.active {
-    color: #fff;
-    background-color: #333;
-}
-#carousel .disable {
-    visibility: hidden;
-}
-#carousel .overview {
-    list-style: none;
-    position: absolute;
-    width: 780px;
-    left: 0;
-    top: 0;
-}
-#carousel .overview li {
-    float: left;
-    border: 1px solid #dcdcdc;
-    width: 778px;
-    height: 333px;
 }
 #product .procontent {
   padding: 0 9px;
@@ -290,4 +332,18 @@ a:hover{
   font-size:12px;
   line-height:14px;
   text-align:center;
+}
+#footer{
+  background:url(../images/bottom.png) repeat-x;
+  height:96px;
+  line-height:20px;
+}
+#footer div{
+  text-align:center;
+}
+#links{
+  padding:10px 0;
+}
+#links a {
+  padding:0 20px;
 }
