@@ -140,16 +140,12 @@ a:hover{
 }
 #nav li ul a:link  {
   color:#F1F1F1;
-  text-decoration:none;
 }
 #nav li ul a:visited  {
   color:#F1F1F1;
-  text-decoration:none;
 }
 #nav li ul a:hover  {
   color:#FFF;
-  text-decoration:none;
-  font-weight:normal;
 }
 
 #nav li:hover ul {
