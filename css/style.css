@@ -27,7 +27,9 @@ a:hover{
 }
 
 #header{
-  background:url(../images/background.png) repeat-x fixed top;
+  background:url(../images/background.gif) repeat-x fixed top;
+  width:100%;
+  height:50px;
 }
 
 #logo{
